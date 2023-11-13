@@ -127,3 +127,18 @@ code {
     font-size: 16px;
     font-family: 'Courier New', monospace;
 }
+
+a {
+    color: #0066cc; /* Set the link color */
+    text-decoration: none; /* Remove the default underline */
+    transition: color 0.3s; /* Add a smooth color transition */
+}
+
+a:hover {
+    color: #002244; /* Change the color on hover */
+}
+
+.link-text {
+    text-align: center;
+    font-size: 20px;
+}
