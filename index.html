@@ -165,10 +165,26 @@ void loop() {
     <img class="finalproduct" src="highrrescollage.png">
     <nav class="navbar">
         <ul>
-            <li><a href="#home">home</a></li>
-            <li><a href="#intro">intro</a></li>
-            <li><a href="#code">code</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#Computational-thinking">Computational Thinking</a></li>
+            <li><a href="#code">My Code</a></li>
+            <li><a href="#final-product">Final Product</a></li>
         </ul>
     </nav>
+    <script>
+        window.onscroll = function() { scrollFunction() };
+
+        function scrollFunction() {
+            var scrollPosition = window.scrollY;
+            var navbar = document.querySelector(".navbar");
+
+            if (scrollPosition > 200) {
+                navbar.classList.add("scrolled-past-pixels");
+            } else {
+                navbar.classList.remove("scrolled-past-pixels");
+            }
+        }
+    </script>
 </body>
 </html>

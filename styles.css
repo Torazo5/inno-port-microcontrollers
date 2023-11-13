@@ -52,12 +52,16 @@ html {
     /* margin-top: 50px; */
 }
 nav {
-    background-color: #333;
-    padding: 10px;
+    padding: 15px;
     position: fixed;
-    width: 100%;
     top: 0;
+    width: 100%;
     z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent; /* Initial background color */
+    border-bottom: 1px solid transparent; /* Initial border color */
+    transition: background-color 0.3s ease, border-bottom 0.3s ease; /* Transition effect */
 }
 
 ul {
@@ -71,6 +75,23 @@ li {
     margin-right: 20px;
 }
 
+a {
+    text-decoration: none;
+    color: #000; /* Link color */
+    font-size: 18px; /* Font size */
+}
+
+/* Add a class to the nav bar when scrolled past 200 pixels */
+.scrolled-past-pixels {
+    background-color: #fff; /* White background color */
+    border-bottom: 1px solid #000; /* Black border color */
+}
+
+/* Add a class to the nav bar when scrolled past the #intro ID */
+.scrolled-past-intro {
+    background-color: #fff; /* White background color */
+    border-bottom: 1px solid #000; /* Black border color */
+}
 
 .description {
     color: #555; /* Slightly darker gray text color */
