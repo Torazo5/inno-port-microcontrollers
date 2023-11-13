@@ -11,9 +11,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-}
-
-.content {
+}yuhbyubyubhtent {
     flex: 1;
     padding: 20px;
     display: flex;
@@ -135,7 +133,7 @@ body {
 }
 
 .code-box {
-    width: 70%; /* Adjust the width as needed */
+    width: 60%; /* Adjust the width as needed */
     background-color: #fafafa; /* Light background for code box */
     padding: 0px;
     border-radius: 8px;
