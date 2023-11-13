@@ -65,3 +65,29 @@ body {
     font-weight: bold;
 }
 
+.comp-think {
+    font-size: 28px;
+
+}
+.container-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    max-width: 900px; /* Adjust the max-width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.comp-think-name {
+    text-align: center;
+}
+
+.image-vib {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
