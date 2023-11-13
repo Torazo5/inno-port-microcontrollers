@@ -4,6 +4,9 @@ body {
     color: black;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 .container {
     position: relative;
     background: #f5f5f5; /* Light gray background */
@@ -42,6 +45,32 @@ body {
 .header, .comp-think-name, .code-title {
     color: rgb(13, 148, 134); /* Teal color for headers */
 }
+
+.code-write {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    /* margin-top: 50px; */
+}
+nav {
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+}
+
 
 .description {
     color: #555; /* Slightly darker gray text color */
