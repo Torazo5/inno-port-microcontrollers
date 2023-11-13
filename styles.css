@@ -50,7 +50,7 @@ body {
 
 .header {
     text-align: center;
-    font-size: 70px;
+    font-size: 50px;
 }
 
 .desc {
@@ -90,4 +90,10 @@ body {
     margin-right: auto;
     width: 500px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
+}
+
+.steps {
+    max-width: 1000px;
+    font-size: 28px;
+    line-height: 1.5;
 }

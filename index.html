@@ -32,6 +32,7 @@
         Computational thinking is always separated into 4 parts, Decomposition, Pattern Recognition, Abstraction and Algorithm. To explain this further,
         I will show you how I used Computational Thinking to create a solution for my problem.
     </p>
+
     <h1 class="comp-think-name">Decomposition</h1>
     <p class="comp-think container-center">
         The first step is always Decomposition, and it is to break down the problem into smaller bits 
@@ -40,12 +41,44 @@
         and a speaker for the blind. 
     </p>
     <img class = 'image-vib' src="vibrator+buzzer.png">
-    <h1 class="comp-think-name">Decomposition</h1>
+
+    <h1 class="comp-think-name">Pattern Recognition</h1>
     <p class="comp-think container-center">
-        The first step is always Decomposition, and it is to break down the problem into smaller bits 
-        each bit of the problem is easier to work around. In my case, the multiple smaller problems I had to face was that if I made a speaker that will warn the user of an obstacle,
-        it wouldn't work for a deaf person and/or if I use a lamp, the blind cannot tell. There are many ways to counter this but I thought that we can use a vibration motor for the deaf 
-        and a speaker for the blind. 
+        The second step is to find any patterns and see how we could counter them. First of all, I believe it is very common that these people have lots of issues in avoiding fast moving
+        objects as sticks or dogs can barely react when let's say a bicycle is approaching them as there's just not enough time to react. So to counter this, it is important for me to create
+        something that can detect objects from far and a real time checker so that it will relay information to the user instantly. Another thing is that even if we make an extremely complicated
+        tool for them, it might be difficult for them to set up or wear so it is important that it is easy to use, something like a hat or a belt. The hardest part here is that obstacles range 
+        in many shapes, heights, width, danger so it becomes very hard to pick which one to specialize in. But if I was to pick one, I decided that the head was the most important because dogs and sticks
+        detect ground obstacles. Using this pattern, I decided to create a product to protect the head. 
+    </p>
+    <img class = 'image-vib' src="kid hitting head.webp">
+
+    <h1 class="comp-think-name">Abstraction</h1>
+    <p class="comp-think container-center">
+        The second last step is Abstraction, which is a bit different than the previous two steps in the sense that the past two steps were to break down the problem but abstraction 
+        is simplifying our solution so it is more efficient and easier to work with. It is important here that we understand how we are going to detect the obstacles. Do we make an 
+        extremely large hat that won't let anything go near me? Will I create a radar on my head that will detect anyone within 2m of me in every direction? Both these ideas are undoubtedly
+        a solution to this problem but is it efficient? Clearly not. The stick idea is impractical because the hat will be too heavy and our solution should only be helping the user and
+        doesn't disturb anyone else. The radar logically makes sense but is it really necessary to detect an obstacle from every direction? I thought that wasn't necessary, a detector that will
+        detect what is ahead of the person is good enough. So, I have decided to use the ultrasonic sensor, basically a radar but a single direction. The sensor is simply a device that emits
+        waves and detects how far the nearest object is. 
+    </p>
+    <img class = 'image-vib' src="um sensor.png"> <img class = 'image-vib' src="big hat.webp">
+
+    <h1 class="comp-think-name">Algorithm</h1>
+    <p class="comp-think container-center">
+        The final step is to create the Algorithm. An Algorithm is basically a step by step instruction we will relay to the computer so it knows EXACTLY what to do. It is really 
+        important to understand that as a coder, the computer will only do what you tell it to do, nothing less, nothing more. Although many people think algorithm is just a lot
+        of painful code, you can visually think of it as well. Before I show the image, I would like to explain with words first as then the visual explanation becomes more clear as well. <br>
+        The algorithm goes like this: <br>
+        <div class="steps container-center ">
+        1. The Arduino will send a trigger to the ultrasonic sensor to emit a wave<br>
+        2. The ultrasonic sensor will calculate the distance and sends it to the Arduino<br>
+        3. The Arduino will read the data, convert the measurements into centimeters<br>
+        4. The Arduino will see if the distance is under our "Distance Threshold"(Distance Threshold - at what distance will the product warn the user) <br>
+        5. If the distance is under the Distance Threshold, the Arduino sends a signal to the buzzer and vibration motor to turn on
+        6. Delay a short duration, then starts again at step 1
+        </div>
     </p>
 </body>
 </html>
