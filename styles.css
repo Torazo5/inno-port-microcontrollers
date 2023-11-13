@@ -183,3 +183,7 @@ a:hover {
     width: 70%; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
 }
+
+.compthink-title{
+    color: rgb(10, 102, 93); /* Teal color for headers */
+}
