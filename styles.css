@@ -40,8 +40,8 @@ body {
     margin-bottom: 0.5vh;
 }
 
-.header, .comp-think-name, .code-title, .link-text {
-    color: #0f9285; /* Teal color for headers */
+.header, .comp-think-name, .code-title {
+    color: rgb(13, 148, 134); /* Teal color for headers */
 }
 
 .description {
@@ -58,10 +58,11 @@ body {
     text-align: center;
     font-size: 40px;
     margin-top: 100px;
+    font-weight: 800;
 }
 
 .desc {
-
+    color: #333333e3;
     font-size: 28px;
     text-align: center;
     line-height: 1.4;
@@ -83,7 +84,7 @@ body {
 
 .comp-think {
     font-size: 28px;
-    
+    color: #333333e3;
 }
 .container-center {
     display: flex;
@@ -115,6 +116,7 @@ body {
     max-width: 1000px;
     font-size: 28px;
     line-height: 1.5;
+    color: #333333e3;
 }
 
 .code-title {
