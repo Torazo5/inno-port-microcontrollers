@@ -59,3 +59,9 @@ body {
     line-height: 1.4;
     margin-bottom: 150px;
 }
+
+.list-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
