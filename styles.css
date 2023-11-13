@@ -11,7 +11,8 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-}yuhbyubyubhtent {
+}
+.content {
     flex: 1;
     padding: 20px;
     display: flex;
@@ -48,7 +49,7 @@ body {
     font-weight: 400;
     text-align: center;
     line-height: 1.3; /* Adjust the line-height as needed */
-    font-size: 2vw; /* Adjust font size relative to viewport width */
+    font-size: 1.5vw; /* Adjust font size relative to viewport width */
     margin-top: 1vh;
 }
 
