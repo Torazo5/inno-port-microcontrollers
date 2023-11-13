@@ -8,18 +8,20 @@
     <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap">
+    <script src="script.js"></script>
 </head>
 <body>
     <section id="home">
     <div class="container">
-    <img class="image" src="WhatsApp Image 2023-11-12 at 23.00.09_77b6840f.jpg" />
+        <img class="image slide-in" src="WhatsApp Image 2023-11-12 at 23.00.09_77b6840f.jpg" />
     <div class="content">
-        <div class="title">Guardian Hat</div>
-        <div class="description">
-        A clever invention to help the blind and the deaf. <br>It's simple yet smart and it will hopefully give me the 7 I need.
+        <div class="title fade-in">Guardian Hat</div>
+        <div class="description fade-in">
+            A clever invention to help the blind and the deaf. <br>It's simple yet smart and it will hopefully give me the 7 I need.
         </div>
     </div>
     </div>
+
     </section>
     <div class="container-center-s" id="intro">
         <div class="container-center-s-inner">
@@ -172,19 +174,5 @@ void loop() {
             <li><a href="#final-product">Final Product</a></li>
         </ul>
     </nav>
-    <script>
-        window.onscroll = function() { scrollFunction() };
-
-        function scrollFunction() {
-            var scrollPosition = window.scrollY;
-            var navbar = document.querySelector(".navbar");
-
-            if (scrollPosition > 200) {
-                navbar.classList.add("scrolled-past-pixels");
-            } else {
-                navbar.classList.remove("scrolled-past-pixels");
-            }
-        }
-    </script>
 </body>
 </html>

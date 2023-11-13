@@ -7,6 +7,36 @@ body {
 html {
     scroll-behavior: smooth;
 }
+.fade-in {
+    opacity: 0;
+    animation: fadeIn ease 2.5s;
+    animation-fill-mode: forwards;
+}
+
+.slide-in {
+    transform: translateX(-100%);
+    animation: slideIn ease 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
 .container {
     position: relative;
     background: #f5f5f5; /* Light gray background */
@@ -160,6 +190,7 @@ a {
     margin: 0;
     padding: 1%;
 }
+
 
 .comp-think-name {
     text-align: center;
